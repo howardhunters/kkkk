@@ -4,7 +4,7 @@
 WSPATH=${WSPATH:-'argo'}
 UUID=${UUID:-'2f9ab0f2-7796-4440-b629-97407095bc1b'}
 WEB_USERNAME=${WEB_USERNAME:-'admin'}
-WEB_PASSWORD=${WEB_PASSWORD:-'password'}
+WEB_PASSWORD=${WEB_PASSWORD:-'2f9ab0f2-7796-4440-b629-97407095bc1b'}
 
 generate_config() {
   cat > config.json << EOF
@@ -90,7 +90,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -117,7 +117,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -144,7 +144,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
@@ -172,7 +172,7 @@ generate_config() {
                 }
             },
             "sniffing":{
-                "enabled":true,
+                "enabled":false,
                 "destOverride":[
                     "http",
                     "tls"
